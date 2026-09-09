@@ -27,7 +27,7 @@ vectorstore = Chroma.from_documents(
 )
 
 retriever = vectorstore.as_retriever(
-    search_kwargs = {"k":3}
+    search_kwargs = {"k":1}
 )
 
 llm = ChatOllama(
@@ -66,10 +66,9 @@ while True:
             "question": question
         }
     )
-    print(f"Your question is {question} \n\n")
-    print(f"And your prompt is {format_prompt} \n\n")
-    print(f"And your matched documnet was this {documents} \n\n")
-    print(f"And context recieved is this: {context} \n\n")
-response = llm.invoke(format_prompt)
-
-print("Here is your answer\n\n\n" + response.content)
+    # print(f"Your question is {question} \n\n")
+    # print(f"And your prompt is {format_prompt} \n\n")
+    # print(f"And your matched documnet was this {documents} \n\n")
+    # print(f"And context recieved is this: {context} \n\n")
+    response = llm.invoke(format_prompt)
+    print("Here is your answer\n\n\n" + response.content)
