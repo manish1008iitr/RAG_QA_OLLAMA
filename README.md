@@ -85,7 +85,7 @@ pip install -r requirements.txt
 Install Ollama on your computer and verify that it is available: \
 ollama --version \
 Pull the LLM used by the project: \
-ollama pull llama3.2 \
+ollama pull llama3.2  \
 
 Pull the embedding model:
 ollama pull nomic-embed-text
@@ -112,16 +112,16 @@ The application will retrieve relevant information from the document and generat
 Suppose the PDF contains information about an organization.
 You could ask: What are the major services provided by the organization?
 
-The architecture can be adapted for: \
-    Academic document Q&A \
-    Company policy assistants \
-    FAQ systems \
-    Research paper Q&A \
-    Technical documentation assistants \
-    Internal knowledge assistants \
-    Business document analysis \
+The architecture can be adapted for:  \
+    Academic document Q&A  \
+    Company policy assistants  \
+    FAQ systems  \
+    Research paper Q&A  \
+    Technical documentation assistants  \
+    Internal knowledge assistants  \
+    Business document analysis  \
 
-# Future Improvements \
+# Future Improvements 
     Support for multiple PDFs \
     Streamlit/Gradio user interface \
     Conversational chat history \
