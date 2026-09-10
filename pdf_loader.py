@@ -3,7 +3,7 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from config import Config
 config_data = Config()
 
-class pdf_loader:
+class Pdf_loader:
     def __init__(self, pdf_path):
         self.pdf_path = pdf_path
     
