@@ -133,18 +133,18 @@ The architecture can be adapted for:
     Internal knowledge assistants
     Business document analysis
 
-#Future Improvements 
-    Support for multiple PDFs
-    Streamlit/Gradio user interface
-    Conversational chat history
-    Source-document citations
-    Multiple document formats
-    Improved retrieval strategies
-    RAG evaluation metrics
-    Retrieval and generation logging
-    REST API using FastAPI
-    Docker deployment
-    Document upload interface
+#Future Improvements \
+    Support for multiple PDFs \
+    Streamlit/Gradio user interface \
+    Conversational chat history \
+    Source-document citations \
+    Multiple document formats \
+    Improved retrieval strategies \
+    RAG evaluation metrics \
+    Retrieval and generation logging \
+    REST API using FastAPI \
+    Docker deployment \
+    Document upload interface \
 
 
 
