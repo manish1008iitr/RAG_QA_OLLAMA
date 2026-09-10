@@ -67,7 +67,7 @@ Before running the project, make sure you have: \
     Ollama \
     Required Python packages \
     A local Ollama model \
-    A PDF document \
+    A PDF document 
 
 # Installation
 1. Clone the Repository
@@ -85,7 +85,7 @@ pip install -r requirements.txt
 Install Ollama on your computer and verify that it is available: \
 ollama --version \
 Pull the LLM used by the project: \
-ollama pull llama3.2  \
+ollama pull llama3.2  
 
 Pull the embedding model:
 ollama pull nomic-embed-text
@@ -119,20 +119,20 @@ The architecture can be adapted for:  \
     Research paper Q&A  \
     Technical documentation assistants  \
     Internal knowledge assistants  \
-    Business document analysis  \
+    Business document analysis  
 
 # Future Improvements 
     Support for multiple PDFs 
     Streamlit/Gradio user interface 
-    Conversational chat history \
-    Source-document citations \
-    Multiple document formats \
-    Improved retrieval strategies \
-    RAG evaluation metrics \
-    Retrieval and generation logging \
-    REST API using FastAPI \
-    Docker deployment \
-    Document upload interface \
+    Conversational chat history 
+    Source-document citations 
+    Multiple document formats 
+    Improved retrieval strategies 
+    RAG evaluation metrics 
+    Retrieval and generation logging 
+    REST API using FastAPI 
+    Docker deployment 
+    Document upload interface 
 
 
 
