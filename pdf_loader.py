@@ -3,11 +3,11 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from config import Config
 config_data = Config()
 
-class Pdf_loader:
+class PDFLoader:
     def __init__(self, pdf_path):
         self.pdf_path = pdf_path
     
-    def pdf_loader(self,pdf_path):
+    def process_pdf(self):
         markdown_text = pdf_load.to_markdown(
             self.pdf_path
         )

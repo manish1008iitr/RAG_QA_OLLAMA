@@ -33,7 +33,7 @@ class RAGPipeline():
 
         ## Generating prompt 
         format_prompt = self.prompt.invoke({
-            "context":context
+            "context":context,
             "question": question
         })
 
