@@ -49,15 +49,15 @@ The complete application is implemented using a modular Python architecture, mak
 
 
 
-# Tech Stack \
-Technology                  Purpose \
-Python	                    Application development \
-Ollama	                    Local LLM inference \
-Llama 3.2	                Text generation \
-Nomic Embed Text	        Text embeddings \
-Vector Store	            Semantic document retrieval \
-RAG	Retrieval +             generation architecture \
-Object-Oriented             Programming	Modular application design \
+# Tech Stack 
+Technology -->                Purpose \
+Python -->                    Application development \
+Ollama -->	                    Local LLM inference \
+Llama 3.2 --> 	                Text generation \
+Nomic Embed Text --> 	        Text embeddings \
+Vector Store -->            Semantic document retrieval \
+RAG	Retrieval -->            generation architecture \
+Object-Oriented  -->           Programming	Modular application design 
 
 
 # Prerequisites
@@ -122,8 +122,8 @@ The architecture can be adapted for:  \
     Business document analysis  \
 
 # Future Improvements 
-    Support for multiple PDFs \
-    Streamlit/Gradio user interface \
+    Support for multiple PDFs 
+    Streamlit/Gradio user interface 
     Conversational chat history \
     Source-document citations \
     Multiple document formats \
