@@ -3,8 +3,6 @@ from langchain_core.prompts import ChatPromptTemplate
 from config import Config
 config_data = Config() 
 
-from vector_store import Vector_loading
-vector_loader = Vector_loading()
 
 class RAGPipeline():
     def __init__(self, retriever):

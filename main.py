@@ -1,6 +1,6 @@
 from pdf_loader import PDFLoader
 from vector_store import Vector_loading
-from rag_pipleline import RAGPipeline
+from rag_pipeline import RAGPipeline
 from config import Config
 config_data = Config()
 
@@ -12,8 +12,8 @@ class PDF_RAG_Application:
         self.vector_store = Vector_loading()
 
     def initialize(self):
-        document = self.pdf_loader.process_pdf()
-        self.vector_store.create_vector_store(document)
+        splitted_pdf_data = self.pdf_loader.process_pdf()
+        self.vector_store.create_vector_store(splitted_pdf_data)
 
         retriever = self.vector_store.get_retreiver()
 

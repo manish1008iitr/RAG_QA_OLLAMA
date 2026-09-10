@@ -1,4 +1,4 @@
-import pymupdf4llm as pdf_load
+import pymupdf4llm 
 from langchain_text_splitters import RecursiveCharacterTextSplitter 
 from config import Config
 config_data = Config()
@@ -7,8 +7,8 @@ class PDFLoader:
     def __init__(self, pdf_path):
         self.pdf_path = pdf_path
     
-    def process_pdf(self):
-        markdown_text = pdf_load.to_markdown(
+    def pdf_loader(self):
+        markdown_text = pymupdf4llm.to_markdown(
             self.pdf_path
         )
         return markdown_text
@@ -23,11 +23,11 @@ class PDFLoader:
 
     def process_pdf(self):
         print(" \n Loading PDF....")
-        pdf_data = self.pdf_loader(config_data) # Loading of pdf 
+        pdf_markdown_data = self.pdf_loader() # Loading of pdf 
 
         print(" \n Splitting PDF into chunks....")
-        splitted_pdf = self.split_text(splitted_pdf) # creation of chunks 
-        return splitted_pdf
+        splitted_pdf_text = self.split_text(pdf_markdown_data) # creation of chunks 
+        return splitted_pdf_text
 
 
 

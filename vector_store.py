@@ -1,6 +1,5 @@
 from langchain_ollama import OllamaEmbeddings 
 from langchain_chroma import Chroma
-from pdf_loader import Pdf_loader
 
 from config import Config
 config_data = Config()
@@ -13,8 +12,9 @@ class Vector_loading:
         self.vectorstore = " "
     
     def create_vector_store(self, document):
+        print(" \n Creating Vector store.... ")
         self.vectorstore = Chroma.from_documents(
-            documents = documnet, 
+            documents = document, 
             embedding = self.embeddings, 
             collection_name = config_data.COLLECTION_NAME
         )
