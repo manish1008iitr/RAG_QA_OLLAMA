@@ -37,9 +37,9 @@ class RAGPipeline():
 
         ##Generating response 
         response = self.llm.invoke(
-            self.format_prompt
+            format_prompt
         )
-        return response.context
+        return response.content
 
 
 

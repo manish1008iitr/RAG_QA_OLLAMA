@@ -22,7 +22,7 @@ class PDF_RAG_Application:
     def run(self):
         self.initialize()
         question = input("Please Entre your question here \n ")
-        answer = self.rag_pipleline.ask_question(question)
+        answer = self.rag_pipleline.create_answer(question)
         print(answer)
 
 

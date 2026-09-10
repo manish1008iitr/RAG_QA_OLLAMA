@@ -21,11 +21,11 @@ class Vector_loading:
 
         print(" \n Vector store get created successfully")
 
-        def get_retreiver(self):
-            return self.vectorstore.as_retriever(
-                search_kwargs = {
-                    "k":config_data.TOP_K
-                }
-            )
+    def get_retreiver(self):
+        return self.vectorstore.as_retriever(
+            search_kwargs = {
+                "k":config_data.TOP_K
+            }
+        )
     
 
