@@ -81,7 +81,7 @@ On macOS/Linux: source venv/bin/activate
 Install the required Python libraries used by the project:
 pip install -r requirements.txt
 
-# Ollama Setup \
+# Ollama Setup 
 Install Ollama on your computer and verify that it is available: \
 ollama --version \
 Pull the LLM used by the project: \
@@ -94,24 +94,20 @@ Verify the installed models:
 ollama list
 
 The project configuration currently expects: llama3.2, nomic-embed-text
+
 # Add Your PDF
-
-The current configuration expects a PDF named:
-ais_faq.pdf
-
+The current configuration expects a PDF named: ais_faq.pdf
 Place the PDF in the project directory: Alternatively, update the PDF_PATH parameter in config.py:
-
 self.PDF_PATH = "your_document.pdf"
 
-#Run the Application
+# Run the Application
 Start the application using: python main.py
-
 You will be prompted to enter a question: "Please Enter your question here"
 
 Enter your question about the PDF.
 The application will retrieve relevant information from the document and generate an answer using the locally hosted LLM.
 
-#Example 
+# Example 
 
 Suppose the PDF contains information about an organization.
 You could ask: What are the major services provided by the organization?
@@ -125,7 +121,7 @@ The architecture can be adapted for: \
     Internal knowledge assistants \
     Business document analysis \
 
-#Future Improvements \
+# Future Improvements \
     Support for multiple PDFs \
     Streamlit/Gradio user interface \
     Conversational chat history \
