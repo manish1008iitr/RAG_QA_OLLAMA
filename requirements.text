@@ -1,3 +1,8 @@
 pymupdf4llm
 langchain_text_splitters
 mlflow
+langchain_chroma
+langchain_huggingface
+torch
+transformers
+langchain_core.prompts
